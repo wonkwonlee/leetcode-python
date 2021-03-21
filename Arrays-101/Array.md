@@ -11,11 +11,22 @@
 
 ## Array Insertions
 1. Inserting a new element at the end of the Array.
-    * arr.append()
+    * **arr.append()**
 2. Inserting a new element at the beginning of the Array.
-    * arr.insert(0, x)
+    * **arr.insert(0, x)**
 3. Inserting a new element at any given index inside the Array.
-    * arr.insert(n, x)
+    * **arr.insert(n, x)**
+
+
+## Array Deletions
+1. Deleting the last element of the Array.
+    * **arr.pop()**, **del arr[len(arr)-1]**
+2. Deleting the first element of the Array.
+    * **arr.pop(0)**, **del arr[0]**
+3. Deletion at any given n-th index.
+    * **arr.pop(n)**, **del arr[n]**
+4. Deleting the first appearing element x of the Array.
+    * **arr.remove(x)**
 
 
 ## List Comprehension
@@ -33,6 +44,7 @@ for x in arr:
 
 print(newList)
 ```
+
 #### With list comprehension
 ```python
 arr = ["apple", "banana", "cherry", "kiwi", "mango"]
