@@ -1,7 +1,15 @@
 '''
-파이썬에서는 숫자는 정수, 실수 상관없이 0이면 거짓, 0이 아닌 수는 참이다.
-따라서 if (i == 1) : ~~ 대신, if i : ~~~ 이렇게 적어도 된다.
+Max Consecutive Ones
+Given a binary array, find the maximum number of consecutive 1s in this array.
 
+
+## Python Booleans as Numbers:
+Booleans are considered a numeric type in Python.
+All numbers except '0' are True and '0' is always False.
+
+Both expressions work fine.
+if (i == 1) : ~~~
+if i : ~~~
 '''
 class Solution:
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
