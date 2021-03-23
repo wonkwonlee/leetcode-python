@@ -9,6 +9,7 @@
 * **Delete** an element from the existing array.
 * **Search** for a particular element in the array - the most commonly executed operation.
 
+
 ## Array Insertions
 1. Inserting a new element at the end of the Array.
     * **arr.append()**
@@ -29,6 +30,24 @@
     * **arr.remove(x)**
 
 
+## Search in an Array
+* Searching is the most important operation of an Array.
+* Searching means to **find an occurrence of a particular element** in the Array and return its position. 
+* Search becomes a constant time operation if we know the index in the Array that contains the element.
+    + Simply go to the given index and check whether the element is there.
+
+### Linear Search
+* If the index is not known, then we need to check every element in the Array.
+* This technique for finding an element by checking through all elements one by one is known as the linear search algorithm.
+* In the worst case, a linear search ends up checking the entire Array, ***O(N)***.
+
+### Binary Search
+* If the elements in the Array are in *sorted order*, then we can use binary search.
+* Binary search **repeatedly look at the middle element** in the Array, and determine whether the element must be to the left, or to the right.
+* Each time, we can halve the number of elements, making binary search a lot faster.
+* However, if the data is not sorted, binary search cannot be applied.
+
+
 ## List Comprehension
 * List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
 * newList = [expression for item in iterable if condition == True]
@@ -39,8 +58,8 @@ arr = ["apple", "banana", "cherry", "kiwi", "mango"]
 newList = []
 
 for x in arr:
-  if "a" in x:
-    newList.append(x)
+    if "a" in x:
+        newList.append(x)
 
 print(newList)
 ```
