@@ -12,7 +12,9 @@ pow(a, b)            pow(3, 2) = 9
 arr.sort()
 sorted(arr)
 """
+
+
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
-        squared = sorted([x**2 for x in nums])
+        squared = sorted([x ** 2 for x in nums])
         return squared
