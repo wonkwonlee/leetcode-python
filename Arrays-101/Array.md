@@ -48,6 +48,11 @@
 * However, if the data is not sorted, binary search cannot be applied.
 
 
+## In-Place Array Operations
+* In-place Array operations help to reduce space complexity.
+* In-place Array operations are important for programming interviews, where there is *a focus on minimizing both time and space complexity* of algorithms.
+
+
 ## List Comprehension
 * List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
 * newList = [expression for item in iterable if condition == True]
