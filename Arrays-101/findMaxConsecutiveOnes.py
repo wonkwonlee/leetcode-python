@@ -1,4 +1,4 @@
-'''
+"""
 Max Consecutive Ones
 Given a binary array, find the maximum number of consecutive 1s in this array.
 
@@ -10,7 +10,7 @@ All numbers except '0' are True and '0' is always False.
 Both expressions work fine.
 if (i == 1) : ~~~
 if i : ~~~
-'''
+"""
 class Solution:
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
         # Store max value and count
