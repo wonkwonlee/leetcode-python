@@ -49,8 +49,10 @@
 
 
 ## In-Place Array Operations
-* In-place Array operations help to reduce space complexity.
+* In-place Array operations help to **reduce space complexity**.
 * In-place Array operations are important for programming interviews, where there is *a focus on minimizing both time and space complexity* of algorithms.
+* In-place Array operations are not always the best method.
+    + If we need the original values again later, we should not overwrite them.
 
 
 ## List Comprehension
