@@ -55,6 +55,13 @@
     + If we need the original values again later, we should not overwrite them.
 
 
+## Other Techniques
+* **Two-Pointer** : Using two pointers helps to cover a sub-array or mini array within the main array.
+    + ![two_p](https://user-images.githubusercontent.com/28593767/112722481-2f139b80-8f4d-11eb-94ec-361063073cf8.png)
+* **Circular Array** : Connecting the two ends of the array, thus making an unbounded circle.
+    + ![circular](https://user-images.githubusercontent.com/28593767/112722478-2cb14180-8f4d-11eb-879e-70957befbb2d.png)
+
+
 ## List Comprehension
 * List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
 * newList = [expression for item in iterable if condition == True]
