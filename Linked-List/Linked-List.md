@@ -16,6 +16,35 @@
 * It takes *O(N)* time on average to *visit an element by index*, where N is the length of the linked list.
     + Unlike the array, we cannot access a random element in constant time
 
+### Add Operation - Singly Linked List
+To add a new value after a given node prev,
+
+1. Initialize a new node cur with the given value.
+
+<img width="621" alt="add1" src="https://user-images.githubusercontent.com/28593767/112800504-b1fe3880-90aa-11eb-9707-f834caa63aad.png">
+
+2. Link the "next" field of cur to prev's next node next.
+
+<img width="625" alt="add2" src="https://user-images.githubusercontent.com/28593767/112800505-b1fe3880-90aa-11eb-805d-bb8e47996e5c.png">
+
+3. Link the "next" field in prev to cur.
+
+<img width="626" alt="add3" src="https://user-images.githubusercontent.com/28593767/112800508-b296cf00-90aa-11eb-8137-a38a3ab24103.png">
+
+> Inserting a new node into a linked list takes *O(1)* time complexity, which is very efficient.
+
+### Delete Operation - Singly Linked List
+To delete an existing node cur from the singly linked list,
+1. Find cur's previous node prev and its next node next.
+
+<img width="756" alt="del1" src="https://user-images.githubusercontent.com/28593767/112800510-b296cf00-90aa-11eb-80bf-fa0159174f83.png">
+
+2. Link prev to cur's next node next.
+
+<img width="759" alt="del2" src="https://user-images.githubusercontent.com/28593767/112800512-b32f6580-90aa-11eb-897a-3a37387c145f.png">
+
+> Deleting a node in a linked list takes *O(N)* time complexity, as we have to traverse from head node to find out prev.
+
 
 ## Doubly Linked List
 <img width="739" alt="dl" src="https://user-images.githubusercontent.com/28593767/112752327-824d2300-900d-11eb-8db2-b13a359807f0.png">
