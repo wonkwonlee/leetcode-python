@@ -20,25 +20,34 @@ Result:
 #         self.next = None
 
 class Solution:
-    def isCycle(val):
-        set_val = list(set(val))
-        if len(set_val) == len(val):
-            return True
-        else:
-            return False
-
-
     def hasCycle(self, head: ListNode) -> bool:
-        
-        if head.next is None:
+        if  head is None or head.next is None:
             return False
 
-        curr = head
-        curr_val = []
+        values = []
         while True:
-            curr_val.append(curr.val)
-            if curr.next is None:
+            # Return false if there is no more node : acyclic
+            if head.next is None:
                 return False
             else:
-                curr = head.next
+                values.append(head.val)
+                head = head.next    # Update to next node
+                
+            for i in range(len(values)):
+                # # Current element appears in the list more than once
+                # if values.count(values[i]) > 1:
+                    for j in range(i + 1, len(values)):
+                        if values[i] == values[j] and values[j-1] == values[2*j-i-1]:
+                            return True
+
+
+
+
+
+
+
+
+
+
+
 
