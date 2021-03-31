@@ -41,7 +41,7 @@ class Solution:
     #     return root.next
 
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        # Root for final answer and head for temporary calculation
+        # Result for final answer and head for temporary calculation
         result = head = ListNode(0)
 
         carry = 0
