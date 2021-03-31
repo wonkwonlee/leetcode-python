@@ -45,6 +45,15 @@ To delete an existing node cur from the singly linked list,
 
 > Deleting a node in a linked list takes *O(N)* time complexity, as we have to traverse from head node to find out prev.
 
+### Two Pointer Technique
+1. Two pointers starts at different position: one starts at the beginning while another starts at the end
+    + Since we can only traverse in one direction, the first scenario might not work for a singly linked list. 
+2. Two pointers are moved at different speed: one is faster while another one might be slower.
+    + The second scenario, which is also called *slow-pointer and fast-pointer technique*, is useful for a singly linked list.
+
 
 ## Doubly Linked List
 <img width="739" alt="dl" src="https://user-images.githubusercontent.com/28593767/112752327-824d2300-900d-11eb-8db2-b13a359807f0.png">
+
+
+
