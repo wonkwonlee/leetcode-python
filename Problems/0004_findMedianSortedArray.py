@@ -3,7 +3,11 @@ Median of Two Sorted Arrays
 Given two sorted arrays nums1 and nums2 of size m and n respectively, 
 return the median of the two sorted arrays.
 
-Result: 92 ms
+# Floor Division, //
+Python uses // as the floor division operator and % as the modulo operator.
+By using floor division, we can only acquire quotient.
+
+Result: 80 ms
 """
 
 
@@ -15,10 +19,10 @@ class Solution:
 
         # Even number: median is half of two middle values
         if (m + n) % 2 == 0:
-            # Change type to int as float cannot be used in list index
-            index = int((m + n) / 2)
+            # Use // operation (floor division) to ignore decimals
+            index = (m + n) // 2
             return (nums_sort[index - 1] + nums_sort[index]) / 2
         # Odd number: median is the middle value
         else:
-            index = int((m + n) / 2)
+            index = (m + n) // 2
             return float(nums_sort[index])
