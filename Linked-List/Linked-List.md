@@ -3,7 +3,6 @@
 * Each element in the linked list is actually a separate object while all the objects are **linked together by the reference field** in each element.
 * There are two types of linked list: singly-linked list and doubly-linked list.
 
-
 ## Singly Linked List
 <img width="530" alt="sl" src="https://user-images.githubusercontent.com/28593767/112752326-80835f80-900d-11eb-98cd-e7afedd359ca.png">
 
@@ -50,6 +49,16 @@ To delete an existing node cur from the singly linked list,
     + Since we can only traverse in one direction, the first scenario might not work for a singly linked list. 
 2. Two pointers are moved at different speed: one is faster while another one might be slower.
     + The second scenario, which is also called *slow-pointer and fast-pointer technique*, is useful for a singly linked list.
+
+### Reverse Linked List
+> One soloution to reverse a singly linked list is to *iterate the nodes in original order and move them to the head of the list one by one*.
+
+1. From the original head node, move the next node of the head node to the head of the list.
+<img width="493" alt="reverse1" src="https://user-images.githubusercontent.com/28593767/113301269-cd32a780-9339-11eb-82e1-b22856c7009f.png">
+2. Then, move the next node of the original head node, to the head of the list.
+<img width="493" alt="reverse2" src="https://user-images.githubusercontent.com/28593767/113301273-cefc6b00-9339-11eb-934b-b6ff6ebbf92d.png">
+3. If the next node of the original head node is null, stop and return the new head.
+<img width="493" alt="reverse3" src="https://user-images.githubusercontent.com/28593767/113301282-cf950180-9339-11eb-94a7-1fa2df273283.png">
 
 
 ## Doubly Linked List
