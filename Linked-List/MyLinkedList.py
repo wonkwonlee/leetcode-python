@@ -20,7 +20,7 @@ class Node(object):                         # Node class to be used for linked l
         self.next = None                    # Pointer to the next node
 
 
-class MyLinkedList:                         # MyLinkedList initializes the MyLinkedList object
+class MyLinkedList:                         # Initializes the MyLinkedList object
 
     def __init__(self):
         """
