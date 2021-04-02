@@ -6,6 +6,10 @@ Since 2021.03.20
 
 Try to use *Pythonic* approaches.
 
+Although I have studied algorithms and data structure during my undergraduate, I realize I have rather shallow experience in Python. 
+
+This project is to familiarize myself with fundamentals of algorithms and data structure and further to prepare the coding interview.
+
 
 ### Learn
 * ✅ Arrays 101
