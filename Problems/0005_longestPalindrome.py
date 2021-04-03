@@ -1,8 +1,25 @@
-"""
+    """
 Longest Palindromic Substring
 Given a string s, return the longest palindromic substring in s.
 
 Palindrome is a word which reads the same backward as forward, such as madam.
+
+
+# String -> List
+str.split() : Split string by space
+str.split("-") : Split string by -
+list(str) : Store each char of string to list
+
+# List -> String
+new_str = "".join(list) : 
+
+# Reverse a list
+list.reverse() : Reverse the original list
+reversed(arr) : Return reversed list
+    list(reversed(arr))
+    for i in reversed(arr): 
+        print(i)
+
 
 Result: 
 
@@ -14,18 +31,18 @@ class Solution:
         if len(s) == 1:
             return s
         
-        check = False
-        start = 0
-        left, right = [], []
+        list_s = list(s)
+        # print(s)
+        # print(list_s)
         
-        for i in range(len(s)):
-            left.append(s[i])
-            right.append(s[-1 - i])
-            
-            if check and left[i] == right[i]:
-                return "".join(left[start:i+1] + right[-i:-start])
-            
-            if left[i] == right[i]:
-                check = True
-                start = i
-                print(start)
+        for i in range(len(list_s)):
+            left, right = list_s[i], list_s[-i-1]
+            if left == right:
+                result = list_s[i:-i]
+                reverse_result = list(reversed(result))
+                print(result)
+                print(reverse_result)
+#                 print("Same")
+                
+#                 if reverse_result == result
+#                     return "".join(result)
