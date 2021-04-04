@@ -3,12 +3,11 @@ Linked List Cycle
 Given head, the head of a linked list, determine if the linked list has a cycle in it.
 Return True if there is a cycle in the linked list. Otherwise, return False.
 
-A cycle in a linked list is defined if there is some node in the list that can be 
-reached again by continuously following the next pointer. 
+A cycle in a linked list is defined if there is some node in the list that can
+be reached again by continuously following the next pointer.
 Internally, pos is used to denote the index of the node that tail's next pointer 
 is connected to. 
 Note that pos is not passed as a parameter.
-
 
 Set data structure can store not only int or string but also node.
 
@@ -21,7 +20,6 @@ Result: 56 ms
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-
 
 # Method to find a loop in the linked list
 def is_cycle(node):
