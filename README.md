@@ -16,8 +16,15 @@ and further to prepare the coding interview.
 
 
 ### Learn
-* ✅ Arrays 101
-* Linked List
+* ✅ [Arrays 101](https://github.com/wonkwonlee/leetcode-python/blob/master/Arrays-101/Array.md)
+<details>
+    <summary>
+        + [Max Consecutive Ones](https://github.com/wonkwonlee/leetcode-python/blob/master/Arrays-101/findMaxConsecutiveOnes.py)
+        + [Find Numbers with Even Number of Digits](https://github.com/wonkwonlee/leetcode-python/blob/master/Arrays-101/findNumbers.py)
+    </summary>
+</deatils>
+
+* [Linked List](https://github.com/wonkwonlee/leetcode-python/blob/master/Linked-List/Linked-List.md)
 * Binary Tree
 * Recursion I
 * Recursion II
