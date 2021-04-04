@@ -64,4 +64,3 @@ and further to prepare the coding interview.
 |7|[Reverse Integer](./Problems/0007_reverse.py)|Easy|
 
 
-
