@@ -17,7 +17,7 @@ and further to prepare the coding interview.
 
 ## Algorithm and Data Structure
 
-* ✅ [Arrays 101](./Arrays-101/Array.md)
+* ✅ [**Arrays 101**](./Arrays-101/Array.md)
     + [Max Consecutive Ones](./Arrays-101/findMaxConsecutiveOnes.py)
     + [Find Numbers with Even Number of Digits](./Arrays-101/findNumbers.py)
     + [Squares of a Sorted Array](./Arrays-101/sortedSquares.py)
@@ -36,10 +36,10 @@ and further to prepare the coding interview.
     + [Find All Numbers Disappeared in an Array](./Arrays-101/findDisappearedNumbers.py)
     + [Squares of a Sorted Array **O(N) solution**](./Arrays-101/sortedSquares_2.py)
 
-* [Linked List](./Linked-List/Linked-List.md)
-    + [Design Linked List](https://github.com/wonkwonlee/leetcode-python/tree/master/Linked-List/MyLinkedList.py)
-    + [Linked List Cycle](https://github.com/wonkwonlee/leetcode-python/tree/master/Linked-List/hasCycle.py)
-    + [Linked List Cycle II](https://github.com/wonkwonlee/leetcode-python/tree/master/Linked-List/detectCycle.py)
+* [**Linked List**](./Linked-List/Linked-List.md)
+    + [Design Linked List](./Linked-List/MyLinkedList.py)
+    + [Linked List Cycle](./Linked-List/hasCycle.py)
+    + [Linked List Cycle II](./Linked-List/detectCycle.py)
 
 * Binary Tree
 * Recursion I
@@ -53,3 +53,15 @@ and further to prepare the coding interview.
 
 
 ## Problems
+| # | Title | Difficulty |
+|---| ----- | ---------- |
+|1|[Two Sum](./Problems/0001_twoSum.py)|Easy|
+|2|[Add Two Numbers](./Problems/0002_addTwoNumbers.py)|Medium|
+|3|[Longest Substring Without Repeating Characters](./Problems/0003_lengthOfLongestSubstring.py)|Medium|
+|4|[Median of Two Sorted Arrays](./Problems/0004_findMedianSortedArray.py)|Hard|
+|5|[Longest Palindromic Substring](./Problems/0005_longestPalindrome.py)|Medium|
+|6|[ZigZag Conversion](./Problems/0006_convert.py)|Medium|
+|7|[Reverse Integer](./Problems/0007_reverse.py)|Easy|
+
+
+
