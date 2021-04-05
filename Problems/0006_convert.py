@@ -16,11 +16,38 @@ Result:
 
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
-        if numRows == 1 or len(s) == numRows:
+        if numRows == 1 or len(s) == numRows or len(s) == 1:
             return s
 
+        ans = ""
         adj = [[0 for i in range(len(s))] for j in range(numRows)]
 
         for i in range(len(s)):
+            # Vertical
+            if i <= numRows:
+                for j in range(numRows):
+                    adj[i][j] = s[i]
+            # Diagonoal
             for j in range(numRows):
                 adj[i][j] = 
+
+        for i in range(len(s))
+            for row in range(numRows):
+                adj[i][row] = s[i]
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
