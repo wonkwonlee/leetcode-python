@@ -6,9 +6,7 @@ rows like this:
     A P L S I I G
     Y   I   R
 And then read line by line: "PAHNAPLSIIGYIR"
-
 Given a number of rows, return converted string.
-
 
 # Explanation
 N = 3
@@ -19,7 +17,6 @@ N = 4
 P A Y P A L I S H I R I N G
 0 1 2 3 2 1 0 1 2 3 2 1 0 1
 
-
 Result: 56 ms
 """
 
@@ -29,9 +26,9 @@ class Solution:
         # Dictionary to store index
         dic = {}
 
-        # Index of zigzag string
+        # Index of zigzag string (Index: 0 to numRows - 1)
         index = 0
-        # Moving direction, down for +1 and up for -1
+        # Moving direction (Down +1, Up -1)
         down, up = 1, -1
         move = 0
 
@@ -43,6 +40,7 @@ class Solution:
             if index == numRows - 1:
                 move = up
 
+            # Use index as key to store zigzag string
             dic[index] = dic.get(index, "") + char
             # Update index with current moving direction
             index += move

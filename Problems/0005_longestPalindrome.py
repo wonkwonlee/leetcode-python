@@ -21,9 +21,6 @@ for i in reversed(arr):
 # Reverse a string
 str_reverse = str[:: -1]
 
-Dynamic Programing
-
-
 Result: 104 ms
 """
 
