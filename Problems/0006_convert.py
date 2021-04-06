@@ -7,47 +7,44 @@ rows like this:
     Y   I   R
 And then read line by line: "PAHNAPLSIIGYIR"
 
-Write the code that will take a string and make this conversion given a number of rows:
+Given a number of rows, return converted string.
 
 
-Result:
+# Explanation
+N = 3
+P A Y P A L I S H I R I N G
+0 1 2 1 0 1 2 1 0 1 2 1 0 1
+
+N = 4
+P A Y P A L I S H I R I N G
+0 1 2 3 2 1 0 1 2 3 2 1 0 1
+
+
+Result: 56 ms
 """
 
 
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
-        if numRows == 1 or len(s) == numRows or len(s) == 1:
-            return s
+        # Dictionary to store index
+        dic = {}
 
-        ans = ""
-        adj = [[0 for i in range(len(s))] for j in range(numRows)]
+        # Index of zigzag string
+        index = 0
+        # Moving direction, down for +1 and up for -1
+        down, up = 1, -1
+        move = 0
 
-        for i in range(len(s)):
-            # Vertical
-            if i <= numRows:
-                for j in range(numRows):
-                    adj[i][j] = s[i]
-            # Diagonoal
-            for j in range(numRows):
-                adj[i][j] = 
+        for char in s:
+            # Index increases by 1 for each vertical move
+            if index == 0:
+                move = down
+            # Index decreases by 1 for each diagonal move
+            if index == numRows - 1:
+                move = up
 
-        for i in range(len(s))
-            for row in range(numRows):
-                adj[i][row] = s[i]
+            dic[index] = dic.get(index, "") + char
+            # Update index with current moving direction
+            index += move
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        return "".join(dic.values())
