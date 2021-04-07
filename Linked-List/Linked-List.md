@@ -19,11 +19,9 @@
 To add a new value after a given node prev,
 
 1. Initialize a new node cur with the given value.
-
 <img width="621" alt="add1" src="https://user-images.githubusercontent.com/28593767/112800504-b1fe3880-90aa-11eb-9707-f834caa63aad.png">
 
 2. Link the "next" field of cur to prev's next node next.
-
 <img width="625" alt="add2" src="https://user-images.githubusercontent.com/28593767/112800505-b1fe3880-90aa-11eb-805d-bb8e47996e5c.png">
 
 3. Link the "next" field in prev to cur.
