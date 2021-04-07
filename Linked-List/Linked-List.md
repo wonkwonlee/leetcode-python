@@ -72,6 +72,3 @@ To delete an existing node cur from the singly linked list,
 <img width="739" alt="dl" src="https://user-images.githubusercontent.com/28593767/112752327-824d2300-900d-11eb-8db2-b13a359807f0.png">
 
 
-
-
-
