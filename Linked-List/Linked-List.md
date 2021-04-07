@@ -60,6 +60,8 @@ To delete an existing node cur from the singly linked list,
 3. If the next node of the original head node is null, stop and return the new head.
 <img width="493" alt="reverse3" src="https://user-images.githubusercontent.com/28593767/113301282-cf950180-9339-11eb-94a7-1fa2df273283.png">
 
+* Each node moves exactly once, so the time complexity is *O(N)*, where N is the length of the linked list, and the space complexity is *O(1)*.
+
 
 ## Doubly Linked List
 <img width="739" alt="dl" src="https://user-images.githubusercontent.com/28593767/112752327-824d2300-900d-11eb-8db2-b13a359807f0.png">
