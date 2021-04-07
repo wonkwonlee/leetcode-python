@@ -19,9 +19,11 @@
 To add a new value after a given node prev,
 
 1. Initialize a new node cur with the given value.
+
 <img width="621" alt="add1" src="https://user-images.githubusercontent.com/28593767/112800504-b1fe3880-90aa-11eb-9707-f834caa63aad.png">
 
 2. Link the "next" field of cur to prev's next node next.
+
 <img width="625" alt="add2" src="https://user-images.githubusercontent.com/28593767/112800505-b1fe3880-90aa-11eb-805d-bb8e47996e5c.png">
 
 3. Link the "next" field in prev to cur.
@@ -52,10 +54,15 @@ To delete an existing node cur from the singly linked list,
 > One soloution to reverse a singly linked list is to *iterate the nodes in original order and move them to the head of the list one by one*.
 
 1. From the original head node, move the next node of the head node to the head of the list.
+
 <img width="493" alt="reverse1" src="https://user-images.githubusercontent.com/28593767/113301269-cd32a780-9339-11eb-82e1-b22856c7009f.png">
+
 2. Then, move the next node of the original head node, to the head of the list.
+
 <img width="493" alt="reverse2" src="https://user-images.githubusercontent.com/28593767/113301273-cefc6b00-9339-11eb-934b-b6ff6ebbf92d.png">
+
 3. If the next node of the original head node is null, stop and return the new head.
+
 <img width="493" alt="reverse3" src="https://user-images.githubusercontent.com/28593767/113301282-cf950180-9339-11eb-94a7-1fa2df273283.png">
 
 * Each node moves exactly once, so the time complexity is *O(N)*, where N is the length of the linked list, and the space complexity is *O(1)*.
