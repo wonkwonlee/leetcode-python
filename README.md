@@ -40,6 +40,7 @@ and further to prepare the coding interview.
     + [Design Linked List](./Linked-List/MyLinkedList.py)
     + [Linked List Cycle](./Linked-List/hasCycle.py)
     + [Linked List Cycle II](./Linked-List/detectCycle.py)
+    + [Remove Linked List Elements](./Linked-List/removeElements.py)
 
 * Binary Tree
 * Recursion I
@@ -62,5 +63,6 @@ and further to prepare the coding interview.
 |5|[Longest Palindromic Substring](./Problems/0005_longestPalindrome.py)|Medium|
 |6|[ZigZag Conversion](./Problems/0006_convert.py)|Medium|
 |7|[Reverse Integer](./Problems/0007_reverse.py)|Easy|
+|9|[Palindrome Number](./Problems/0009_isPalindrome.py)|Easy|
 
 
