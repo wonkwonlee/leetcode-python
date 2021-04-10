@@ -63,6 +63,7 @@ and further to prepare the coding interview.
 |5|[Longest Palindromic Substring](./Problems/0005_longestPalindrome.py)|Medium|
 |6|[ZigZag Conversion](./Problems/0006_convert.py)|Medium|
 |7|[Reverse Integer](./Problems/0007_reverse.py)|Easy|
+|8|String to Integer (atoi)||
 |9|[Palindrome Number](./Problems/0009_isPalindrome.py)|Easy|
 
 
