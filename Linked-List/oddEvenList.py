@@ -17,4 +17,23 @@ Result:
 #         self.next = next
 class Solution:
     def oddEvenList(self, head: ListNode) -> ListNode:
+        count = 1
+        array = []
+        odd = head
+        even = head.next
+        while odd:
+            if odd.next is None or even.next is None:
+                break
         
+            print(f"curr:{0}", odd.val)
+            if count % 2 == 1:
+                print(f"odd:{0}", odd.val)
+                odd.next = odd.next.next
+                odd = odd.next
+            else:
+                array.append(even)
+                even.next = even.next.next
+                even = even.next
+            count += 1
+
+        return head
