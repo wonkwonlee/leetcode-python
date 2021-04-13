@@ -68,4 +68,5 @@ and further to prepare the coding interview.
 |11|[Container With Most Water](./Problems/0011_maxArea.py)|Medium|
 |12|[Integer to Roman](./Problems/0012_intToRoman.py)|Medium|
 |13|[Roman to Integer](./Problems/0013_romanToInt.py)|Easy|
+|14|[Longest Common Prefix](./Problems/0014_longestCommonPrefix.py)|Easy|
 
