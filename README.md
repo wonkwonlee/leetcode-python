@@ -63,8 +63,9 @@ and further to prepare the coding interview.
 |5|[Longest Palindromic Substring](./Problems/0005_longestPalindrome.py)|Medium|
 |6|[ZigZag Conversion](./Problems/0006_convert.py)|Medium|
 |7|[Reverse Integer](./Problems/0007_reverse.py)|Easy|
-<!-- |8|String to Integer (atoi)|| -->
+|8|String to Integer (atoi)|Medium|
 |9|[Palindrome Number](./Problems/0009_isPalindrome.py)|Easy|
+|10|Regular Expression Matching|Hard|
 |11|[Container With Most Water](./Problems/0011_maxArea.py)|Medium|
 |12|[Integer to Roman](./Problems/0012_intToRoman.py)|Medium|
 |13|[Roman to Integer](./Problems/0013_romanToInt.py)|Easy|
