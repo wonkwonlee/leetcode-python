@@ -35,6 +35,11 @@ Output: 0
 Input: s = "-91283472332"
 Output: -2147483648
 
+# isdigit
+Returns true if input is digit
+
+# isalpha
+Returns true if input is string
 
 Result:
 """
@@ -43,4 +48,32 @@ Result:
 class Solution:
     def myAtoi(self, s: str) -> int:
         
+        result = 0
+        for i in range(len(s)):
+            # If white space, ignore it
+            if s[i] == ' ':
+                continue
+            # If '+', integer is positive
+            if s[i] == '+':
+                pass
+            # If '-', integer is negative
+            if s[i] == '-':
+                pass
+            # If char is string
+            if s[i].isalpha:
+                pass
+            # If char is digit
+            if s[i].isdigit:
+                pass
+
+
+
+
+
+
+
+
+
+
+
 
