@@ -41,38 +41,56 @@ Returns true if input is digit
 # isalpha
 Returns true if input is string
 
+
+"  +  413"
+
+
 Result:
 """
 
 
 class Solution:
     def myAtoi(self, s: str) -> int:
-        
-        result = 0
+        # Maximum boundary and minimum boundary        
+        max_val = 2147483647
+        min_val = -2147483648
+        # Boolean to check before or after digit parsing
+        after_digit = False
+        # Store result string
+        result = ""
         for i in range(len(s)):
+            if not s[i].isdigit() and after_digit:
+                break
             # If white space, ignore it
-            if s[i] == ' ':
+            if s[i] == ' ' : 
                 continue
             # If '+', integer is positive
-            if s[i] == '+':
-                pass
+            elif s[i] == '+':
+                result += '+'
             # If '-', integer is negative
-            if s[i] == '-':
-                pass
-            # If char is string
-            if s[i].isalpha:
-                pass
-            # If char is digit
-            if s[i].isdigit:
-                pass
+            elif s[i] == '-':
+                result += '-'
+            # If char is digit, store the current digit
+            elif s[i].isdigit():
+                result += s[i]
+            # If char is string or '.', break the loop
+            elif s[i].isalpha()  or s[i] == '.':
+                break
+
+        
+        # print(result)
 
 
-
-
-
-
-
-
+        # Return 0 if result is empty
+        if result == '' or (not result.isdigit() and not result[1:].isdigit()):
+            return 0
+        # Clamp result if out of boundary
+        elif int(result) < min_val:
+            return min_val
+        elif int(result) > max_val:
+            return max_val
+        else:
+            return int(result)
 
 
 
