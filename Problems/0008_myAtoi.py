@@ -8,7 +8,7 @@ signed integer (similar to C/C++'s atoi function).
 2. Check if the next character is '-' or '+'.
 This determines if the final result is negative or positive respectively. 
 
-3. Read in next the characters until the next non-digit charcter or the end of 
+3. Read in next the characters until the next non-digit character or the end of
 the input is reached. 
 
 4. Convert these digits into an integer. 
@@ -41,45 +41,46 @@ Returns true if input is digit
 # isalpha
 Returns true if input is string
 
-
-"  +  413"
-
-
-Result:
+Result: 28 ms
 """
 
 
 class Solution:
     def myAtoi(self, s: str) -> int:
-        # Maximum boundary and minimum boundary        
+        # Maximum integer value 2**31 - 1        
         max_val = 2147483647
+        # Minimum integer value 2**31
         min_val = -2147483648
         # Boolean to check before or after digit parsing
         after_digit = False
-        # Store result string
+        # Boolean to check before or after sign symbols
+        after_sign = False
+        # Result string after parsing
         result = ""
         for i in range(len(s)):
+            # Loop break conditions
             if not s[i].isdigit() and after_digit:
                 break
+            if not s[i].isdigit() and after_sign:
+                break
             # If white space, ignore it
-            if s[i] == ' ' : 
+            if s[i] == ' ': 
                 continue
             # If '+', integer is positive
             elif s[i] == '+':
                 result += '+'
+                after_sign = True
             # If '-', integer is negative
             elif s[i] == '-':
                 result += '-'
+                after_sign = True
             # If char is digit, store the current digit
             elif s[i].isdigit():
                 result += s[i]
+                after_digit = True
             # If char is string or '.', break the loop
-            elif s[i].isalpha()  or s[i] == '.':
+            elif s[i].isalpha() or s[i] == '.':
                 break
-
-        
-        # print(result)
-
 
         # Return 0 if result is empty
         if result == '' or (not result.isdigit() and not result[1:].isdigit()):
@@ -90,8 +91,5 @@ class Solution:
         elif int(result) > max_val:
             return max_val
         else:
+            # Return result in integer
             return int(result)
-
-
-
-
