@@ -40,6 +40,9 @@ and further to prepare the coding interview.
     + [Design Linked List](./Linked-List/MyLinkedList.py)
     + [Linked List Cycle](./Linked-List/hasCycle.py)
     + [Linked List Cycle II](./Linked-List/detectCycle.py)
+    + [Intersection of Two Linked Lists](./Linked-List/getIntersectionNode.py)
+    + [Remove Nth Node From End of List]
+    + [Reverse Linked List](./Linked-List/reverseList.py)
     + [Remove Linked List Elements](./Linked-List/removeElements.py)
 
 * Binary Tree
