@@ -3,6 +3,7 @@
 * Each element in the linked list is actually a separate object while all the objects are **linked together by the reference field** in each element.
 * There are two types of linked list: singly-linked list and doubly-linked list.
 
+
 ## Singly Linked List
 <img width="530" alt="sl" src="https://user-images.githubusercontent.com/28593767/112752326-80835f80-900d-11eb-98cd-e7afedd359ca.png">
 
@@ -12,10 +13,11 @@
 * To access the i-th element, we have to traverse from the head node one by one.
     + In the example above, the head is the node 23. 
     + The only way to visit the 3rd node is to use the "next" field of the head node, and then use the "next" field of the second node.
-* It takes *O(N)* time on average to *visit an element by index*, where N is the length of the linked list.
+* It takes *O(N)* time on average to *visit an element by an index*, where N is the length of the linked list.
     + Unlike the array, we cannot access a random element in constant time
 
-### Add Operation - Singly Linked List
+
+## Add Operation - Singly Linked List
 To add a new value after a given node prev,
 
 1. Initialize a new node cur with the given value.
@@ -32,7 +34,8 @@ To add a new value after a given node prev,
 
 > Inserting a new node into a linked list takes *O(1)* time complexity, which is very efficient.
 
-### Delete Operation - Singly Linked List
+
+## Delete Operation - Singly Linked List
 To delete an existing node cur from the singly linked list,
 1. Find cur's previous node prev and its next node next.
 
@@ -44,14 +47,33 @@ To delete an existing node cur from the singly linked list,
 
 > Deleting a node in a linked list takes *O(N)* time complexity, as we have to traverse from head node to find out prev.
 
-### Two Pointer Technique
-1. Two pointers starts at different position: one starts at the beginning while another starts at the end
-    + Since we can only traverse in one direction, the first scenario might not work for a singly linked list. 
-2. Two pointers are moved at different speed: one is faster while another one might be slower.
-    + The second scenario, which is also called *slow-pointer and fast-pointer technique*, is useful for a singly linked list.
 
-### Reverse Linked List
-> One soloution to reverse a singly linked list is to *iterate the nodes in original order and move them to the head of the list one by one*.
+## Two Pointer Technique
+1. **Two pointers starts at different position**: one starts at the beginning while another starts at the end
+    + Since we can only traverse in one direction, the first scenario might not work for a singly linked list. 
+2. **Two pointers are moved at different speed**: one is faster while another one might be slower.
+    + The second scenario, which is also called **slow-pointer and fast-pointer technique**, is useful for a singly linked list.
+
+* Two-pointer technique in the linked list is similar to that in an array, but is trickier and error-prone.
+    1. **Always examine if the node is null before you call the next field.**
+        + Getting the next node of a null node will cause the null-pointer error.
+        + For example, before you run fast = fast.next.next, you need to examine both fast and fast.next is not null.
+    2. **Carefully define the end conditions of your loop.**
+        + Run several examples to make sure your end conditions will not result in an endless loop. 
+        + Also take first tip into consideration when you define your end conditions.
+
+### Complexity Analysis
+* If you only use pointers without any other extra space, the space complexity will be *O(1)*.
+* To calculate the time complexity, we need to analyze *how many times we will run our loop*.
+    0. Assume that we move the faster pointer 2 steps each time and move the slower pointer 1 step each time.
+    1. If there is no cycle, the fast pointer takes N/2 times to reach the end of the linked list, where N is the length of the linked list.
+    2. If there is a cycle, the fast pointer needs M times to catch up the slower pointer, where M is the length of the cycle in the list.
+* Then M <= N, and we will run the loop *up to N times*.
+* Thus, the time complexity is *O(N)*.
+
+
+## Reverse Linked List
+> One solution to reverse a singly linked list is to *iterate the nodes in original order and move them to the head of the list one by one*.
 
 1. From the original head node, move the next node of the head node to the head of the list.
 
