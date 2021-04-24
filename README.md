@@ -41,7 +41,7 @@ and further to prepare the coding interview.
     + [Linked List Cycle](./Linked-List/hasCycle.py)
     + [Linked List Cycle II](./Linked-List/detectCycle.py)
     + [Intersection of Two Linked Lists](./Linked-List/getIntersectionNode.py)
-    + [Remove Nth Node From End of List]
+    + Remove Nth Node From End of List
     + [Reverse Linked List](./Linked-List/reverseList.py)
     + [Remove Linked List Elements](./Linked-List/removeElements.py)
 
@@ -73,4 +73,7 @@ and further to prepare the coding interview.
 |12|[Integer to Roman](./Problems/0012_intToRoman.py)|Medium|
 |13|[Roman to Integer](./Problems/0013_romanToInt.py)|Easy|
 |14|[Longest Common Prefix](./Problems/0014_longestCommonPrefix.py)|Easy|
-
+|15|[3Sum](./Problems/0015_threeSum.py)|Medium|
+|16|[3Sum Closest](./Problems/0016_threeSumClosest.py)|Medium|
+|26|[Remove Duplicates from Sorted Array](./Arrays-101/removeDuplicates.py)|Easy|
+|27|[Remove Element](./Arrays-101/removeElement_2.py)|Easy|
