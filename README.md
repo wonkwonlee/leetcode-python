@@ -32,6 +32,7 @@ and further to prepare the coding interview.
     + [Sort Array By Parity](./Arrays-101/sortArrayByParity.py)
     + [Remove Element **In-Place**](./Arrays-101/removeElement_2.py)
     + [Height Checker](./Arrays-101/heightChecker.py)
+    + [Max Consecutive Ones II **Flip one 0**](./Arrays-101/findMaxConsecutiveOnes_2.py)
     + [Third Maximum Number](./Arrays-101/thirdMax.py)
     + [Find All Numbers Disappeared in an Array](./Arrays-101/findDisappearedNumbers.py)
     + [Squares of a Sorted Array **O(N) solution**](./Arrays-101/sortedSquares_2.py)

@@ -19,7 +19,7 @@ class Solution:
         result, count = 0, 0
 
         for i in nums:
-            # 만약 nums가 1,0 말고 다른 숫자가 있다면 i == 1,2 등 구체적으로 적어야함
+            # False = 0, True = any other number
             if i:
                 count += 1
             else:
