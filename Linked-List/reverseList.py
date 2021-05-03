@@ -23,7 +23,7 @@ Result: 24 ms (Recursive) , 32 ms (Iterative)
 #         self.val = val
 #         self.next = next
 
-# Recursive method
+# Recursive method - 24 ms
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
         def reverse(node, prev=None):
@@ -54,7 +54,7 @@ class Solution:
         return reverse(head)
 
 
-# Iterative method
+# Iterative method - 32 ms
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
         """
