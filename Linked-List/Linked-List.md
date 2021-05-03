@@ -16,6 +16,101 @@
 * It takes *O(N)* time on average to *visit an element by an index*, where N is the length of the linked list.
     + Unlike the array, we cannot access a random element in constant time
 
+### Design Singly Linked List
+1. Initiate a new linked list: represent a linked list using the head node.
+```py
+def __init__(self):
+    """
+    Initialize your data structure here.
+    """
+    self.head = None
+    self.size = 0
+```
+2. Traverse the linked list to get element by index.
+```py
+def get(self, index: int) -> int:
+    """
+    Get the value of the index-th node in the linked list. 
+    If the index is invalid, return -1.
+    """
+    if self.head is None or index >= self.size:
+        return -1
+
+    curr = self.head
+    for i in range(index):
+        curr = curr.next
+
+    return curr.val
+```
+3. Add a new node.
+```py
+def addAtHead(self, val: int) -> None:
+    """
+    Add a node of value val before the first element of the linked list. 
+    After the insertion, the new node will be the first node of the linked list.
+    """
+    node = Node(val)
+    node.next = self.head
+    self.head = node
+
+    self.size += 1
+
+def addAtTail(self, val: int) -> None:
+    """
+    Append a node of value val to the last element of the linked list.
+    """
+    curr = self.head
+    if curr is None:
+        self.head = Node(val)
+    else:
+        while curr.next is not None:
+            curr = curr.next
+        curr.next = Node(val)
+
+    self.size += 1
+
+def addAtIndex(self, index: int, val: int) -> None:
+    """
+    Add a node of value val before the index-th node in the linked list. 
+    If index equals to the length of linked list, 
+    the node will be appended to the end of linked list. 
+    If index is greater than the length, the node will not be inserted.
+    """
+    if index > self.size:
+        return
+
+    curr = self.head
+    if index == 0: 
+        self.addAtHead(val)
+    else:
+        for i in range(index - 1):
+            curr = curr.next
+        node = Node(val)
+        node.next = curr.next
+        curr.next = node
+
+        self.size += 1
+```
+4. Delete a node.
+```py
+def deleteAtIndex(self, index: int) -> None:
+    """
+    Delete the index-th node in the linked list, if the index is valid.
+    """
+    if index >= self.size:
+        return
+
+    curr = self.head
+    if index == 0: 
+        self.head = curr.next
+    else:
+        for i in range(index - 1):
+            curr = curr.next
+        curr.next = curr.next.next
+
+    self.size -= 1
+```
+
 
 ## Add Operation - Singly Linked List
 To add a new value after a given node prev,
@@ -88,6 +183,19 @@ To delete an existing node cur from the singly linked list,
 <img width="493" alt="reverse3" src="https://user-images.githubusercontent.com/28593767/113301282-cf950180-9339-11eb-94a7-1fa2df273283.png">
 
 * Each node moves exactly once, so the time complexity is *O(N)*, where N is the length of the linked list, and the space complexity is *O(1)*.
+
+```py
+def reverseList(self, head: ListNode) -> ListNode:
+    # ListNode prev store reversed linked list
+    prev = None
+    while head:
+        # Update new variable next to head.next, and head.next to prev
+        next, head.next = head.next, prev
+        # Update prev to current head, and head to next(= head.next)
+        prev, head = head, next
+
+    return prev
+````
 
 
 ## Doubly Linked List
