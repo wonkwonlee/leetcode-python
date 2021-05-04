@@ -45,6 +45,7 @@ and further to prepare the coding interview.
     + [Remove Nth Node From End of List](./Linked-List/removeNthFromEnd.py)
     + [Reverse Linked List](./Linked-List/reverseList.py)
     + [Remove Linked List Elements](./Linked-List/removeElements.py)
+    + [Odd Even Linked List](./Linked-List/oddEvenList.py)
 
 * Binary Tree
 * Recursion I
