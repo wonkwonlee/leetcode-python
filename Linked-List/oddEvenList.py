@@ -6,7 +6,7 @@ together followed by the nodes with even indices, and return the reordered list.
 The first node is considered odd, and the second node is even, and so on.
 Note that the relative order inside both the even and odd groups should remain.
 
-Result:
+Result: 32 ms
 """
 
 
@@ -17,24 +17,26 @@ Result:
 #         self.next = next
 
 class Solution:
+    # Python Algorithm Interview - 32 ms
     def oddEvenList(self, head: ListNode) -> ListNode:
-        count = 1
-        array = []
+        # Return None if head is None
+        if head is None:
+            return None
+
+        # Odd points head
         odd = head
+        # Even points head.next
         even = head.next
-        while odd:
-            if odd.next is None or even.next is None:
-                break
+        # Even_head points head.next
+        even_head = head.next
+
+        # Loop through linked list
+        while even and even.next:
+            # Odd and even node moves two steps in each move
+            odd.next, even.next = odd.next.next, even.next.next
+            odd, even = odd.next, even.next
         
-            print(f"curr:{0}", odd.val)
-            if count % 2 == 1:
-                print(f"odd:{0}", odd.val)
-                odd.next = odd.next.next
-                odd = odd.next
-            else:
-                array.append(even)
-                even.next = even.next.next
-                even = even.next
-            count += 1
+        # Link the last node of odd linked list to even_head
+        odd.next = even_head
 
         return head
