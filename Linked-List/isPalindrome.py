@@ -40,8 +40,6 @@ class Solution:
         prev, curr, temp = None, head
 
 
-
-
         return True
 
 
