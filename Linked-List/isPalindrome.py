@@ -37,7 +37,8 @@ class Solution:
         if head is None:
             return None
 
-        prev, curr, temp = None, head
+        prev, node, node_next = None, head, head.next
+        
 
 
         return True
