@@ -40,12 +40,6 @@ class Solution:
         prev, node, node_next = None, head, head.next
         
 
-
         return True
-
-
-
-
-
 
 
