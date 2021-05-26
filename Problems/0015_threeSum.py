@@ -104,7 +104,7 @@ class Solution:
 
         # For each items in nums
         for i in range(len(nums) - 2):
-            # Only if i > 0 and ignore duplicate number
+            # Ignore duplicates if index is after 0
             if i > 0 and nums[i] == nums[i - 1]:
                 continue
 
