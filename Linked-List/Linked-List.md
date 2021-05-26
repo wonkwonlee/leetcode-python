@@ -195,10 +195,14 @@ def reverseList(self, head: ListNode) -> ListNode:
         prev, head = head, next
 
     return prev
-````
+```
+
+### Tips for Linked List Classic Problems
+1. Going through some test cases will save you time.
+2. Feel free to use several pointers at the same time.
+3. In many cases, you need to track the previous node of the current node.
 
 
 ## Doubly Linked List
 <img width="739" alt="dl" src="https://user-images.githubusercontent.com/28593767/112752327-824d2300-900d-11eb-8db2-b13a359807f0.png">
-
 
