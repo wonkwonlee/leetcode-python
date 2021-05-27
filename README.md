@@ -81,5 +81,6 @@ and further to prepare the coding interview.
 |17|[Letter Combinations of a Phone Number](./Problems/0017_letterCombinations.py)|Medium|
 |18|[4Sum](./Problems/0018_fourSum.py)|Medium|
 |19|[Remove Nth Node From End of List](./Linked-List/removeNthFromEnd.py)|Medium|
+|20|[Valid Parentheses](./Problems/0020_isValid.py)|Easy|
 |26|[Remove Duplicates from Sorted Array](./Arrays-101/removeDuplicates.py)|Easy|
 |27|[Remove Element](./Arrays-101/removeElement_2.py)|Easy|
