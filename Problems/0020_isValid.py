@@ -22,6 +22,7 @@ class Solution:
         if s[0] in ')}]':
             return False
 
+        # Initialize a stack
         # First In, Last Out (FILO)
         in_stack = []
         in_stack.append(s[0])
