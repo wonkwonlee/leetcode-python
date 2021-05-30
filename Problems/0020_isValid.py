@@ -31,11 +31,11 @@ class Solution:
         stack = []
 
         for i in range(len(s)):
-            # If char is in open bracket
+            # If char is an open bracket
             if s[i] in open_bracket:
                 # Push char to stack
                 stack.append(pair[s[i]])
-            # If char is in close bracket
+            # If char is a close bracket
             else:
                 # If stack is not empty and char is same as top
                 if stack and s[i] == stack[-1]:
