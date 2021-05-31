@@ -115,11 +115,11 @@ def deleteAtIndex(self, index: int) -> None:
 ## Add Operation - Singly Linked List
 To add a new value after a given node prev,
 
-1. Initialize a new node cur with the given value.
+1. Initialize a new node curr with the given value.
 
 <img width="621" alt="add1" src="https://user-images.githubusercontent.com/28593767/112800504-b1fe3880-90aa-11eb-9707-f834caa63aad.png">
 
-2. Link the "next" field of cur to prev's next node next.
+2. Link the "next" field of curr to prev's next node next.
 
 <img width="625" alt="add2" src="https://user-images.githubusercontent.com/28593767/112800505-b1fe3880-90aa-11eb-805d-bb8e47996e5c.png">
 
@@ -131,7 +131,8 @@ To add a new value after a given node prev,
 
 
 ## Delete Operation - Singly Linked List
-To delete an existing node cur from the singly linked list,
+To delete an existing node curr from the singly linked list,
+
 1. Find cur's previous node prev and its next node next.
 
 <img width="756" alt="del1" src="https://user-images.githubusercontent.com/28593767/112800510-b296cf00-90aa-11eb-80bf-fa0159174f83.png">
@@ -205,4 +206,39 @@ def reverseList(self, head: ListNode) -> ListNode:
 
 ## Doubly Linked List
 <img width="739" alt="dl" src="https://user-images.githubusercontent.com/28593767/112752327-824d2300-900d-11eb-8db2-b13a359807f0.png">
+
+* The doubly linked list has "prev" reference field which links to the previous node of the current node.
+* The doubly linked list can access data in the same exact way as in a singly linked list.
+    1. Not able to access a random position in constant time.
+    2. Traverse from the head to get the i-th node.
+    3. The time complexity in the worse case will be *O(N)*, where N is the length of the linked list.
+
+
+## Add Operation - Doubly Linked List
+To insert a new node curr after an existing node prev,
+
+1. Link curr with prev and next, where next is the original next node of prev.
+
+<img width="851" alt="add1" src="https://user-images.githubusercontent.com/28593767/120182499-74a05d80-c249-11eb-8bc8-fa59493ec0a2.png">
+
+2. Re-link the prev and next with cur.
+
+<img width="857" alt="add2" src="https://user-images.githubusercontent.com/28593767/120182511-766a2100-c249-11eb-93a5-df6cd1def76d.png">
+
+> Similar to the singly linked list, both the time and the space complexity of the add operation are *O(1)*.
+
+
+## Delete Operation - Doubly Linked List
+To delete an existing node curr from the doubly linked list, 
+
+1. Link its previous node prev with its next node next.
+    + Unlike the singly linked list, it is easy to get the previous node in constant time with the "prev" field.
+
+<img width="739" alt="del1" src="https://user-images.githubusercontent.com/28593767/120183159-4bcc9800-c24a-11eb-8f10-8857e2159dfa.png">
+<img width="744" alt="del2" src="https://user-images.githubusercontent.com/28593767/120183163-4cfdc500-c24a-11eb-804c-7aafec55a3b2.png">
+
+2. Node 6 is not in the doubly linked list now.
+
+> Since we no longer need to traverse the linked list to get the previous node, both the time and space complexity are *O(1)*.
+
 
