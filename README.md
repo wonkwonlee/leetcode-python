@@ -84,3 +84,4 @@ and further to prepare the coding interview.
 |20|[Valid Parentheses](./Problems/0020_isValid.py)|Easy|
 |26|[Remove Duplicates from Sorted Array](./Arrays-101/removeDuplicates.py)|Easy|
 |27|[Remove Element](./Arrays-101/removeElement_2.py)|Easy|
+|695|[Max Area of Island](./Problems/0695_maxAreaOfIsland.py)|Medium|
