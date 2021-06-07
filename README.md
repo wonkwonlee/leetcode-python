@@ -47,6 +47,7 @@ and further to prepare the coding interview.
     + [Remove Linked List Elements](./Linked-List/removeElements.py)
     + [Odd Even Linked List](./Linked-List/oddEvenList.py)
     + [Palindrome Linked List](./Linked-List/isPalindrome.py)
+    + [Design Linked List **Doubly Linked List**](./Linked-List/MyLinkedList_2.py)
 
 * Binary Tree
 * Recursion I
