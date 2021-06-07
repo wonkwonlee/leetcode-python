@@ -104,7 +104,6 @@ class MyLinkedList:                         # Initializes the MyLinkedList objec
         curr = self.head
         if index == 0:                      # 0-th index is head
             self.head = curr.next           # The new head is now curr.next
-            # self.head.prev = None           # Point head.prev to none
         else:
             for i in range(index - 1):      # Move to one before the index-th node
                 curr = curr.next
