@@ -32,13 +32,13 @@ and further to prepare the coding interview.
     + [Sort Array By Parity](./Arrays-101/sortArrayByParity.py)
     + [Remove Element **In-Place**](./Arrays-101/removeElement_2.py)
     + [Height Checker](./Arrays-101/heightChecker.py)
-    + [Max Consecutive Ones II **Flip one 0**](./Arrays-101/findMaxConsecutiveOnes_2.py)
+    + [Max Consecutive Ones II - **Flip one 0**](./Arrays-101/findMaxConsecutiveOnes_2.py)
     + [Third Maximum Number](./Arrays-101/thirdMax.py)
     + [Find All Numbers Disappeared in an Array](./Arrays-101/findDisappearedNumbers.py)
-    + [Squares of a Sorted Array **O(N) solution**](./Arrays-101/sortedSquares_2.py)
+    + [Squares of a Sorted Array - **O(N) solution**](./Arrays-101/sortedSquares_2.py)
 
 * [**Linked List**](./Linked-List/Linked-List.md)
-    + [Design Linked List](./Linked-List/MyLinkedList.py)
+    + [Design Linked List - **Singly Linked List**](./Linked-List/MyLinkedList.py)
     + [Linked List Cycle](./Linked-List/hasCycle.py)
     + [Linked List Cycle II](./Linked-List/detectCycle.py)
     + [Intersection of Two Linked Lists](./Linked-List/getIntersectionNode.py)
@@ -47,7 +47,7 @@ and further to prepare the coding interview.
     + [Remove Linked List Elements](./Linked-List/removeElements.py)
     + [Odd Even Linked List](./Linked-List/oddEvenList.py)
     + [Palindrome Linked List](./Linked-List/isPalindrome.py)
-    + [Design Linked List **Doubly Linked List**](./Linked-List/MyLinkedList_2.py)
+    + [Design Linked List - **Doubly Linked List**](./Linked-List/MyLinkedList_2.py)
 
 * Binary Tree
 * Recursion I
