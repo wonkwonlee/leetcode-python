@@ -1,6 +1,6 @@
 """
 Design Linked List
-
+- Singly Linked List
 
 # Using return
 This is used the same reason as break. 
@@ -83,7 +83,7 @@ class MyLinkedList:                         # Initializes the MyLinkedList objec
         else:
             for i in range(index - 1):      # Move to one before the index-th node
                 curr = curr.next
-            node = Node(val)                # Initialize a new node with val
+            node = Node(val)                # Initialize a new node
             node.next = curr.next           # Point new node.next to curr.next
             curr.next = node                # Point curr.next to new node
 
