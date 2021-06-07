@@ -9,7 +9,7 @@ The return value doesn't matter and you only want to exit the whole function.
 def noReturnFunction():
     return
 
-Result:
+Result: 260 ms
 """
 
 
@@ -18,6 +18,7 @@ class Node(object):                         # Node class to be used for linked l
     def __init__(self, val):
         self.val = val                      # Value of current node
         self.next = None                    # Pointer to the next node
+        self.prev = None                    # Pointer to the prev node
 
 
 class MyLinkedList:                         # Initializes the MyLinkedList object
@@ -51,6 +52,7 @@ class MyLinkedList:                         # Initializes the MyLinkedList objec
         node = Node(val)                    # Initialize a new node
         node.next = self.head               # Point node.next to current head
         self.head = node                    # Point self.head to the new node
+        self.prev = node                    # Point self.prev to the new node
 
         self.size += 1                      # Increase size by 1
 
@@ -58,13 +60,15 @@ class MyLinkedList:                         # Initializes the MyLinkedList objec
         """
         Append a node of value val to the last element of the linked list.
         """
+        node = Node(val)                    # Initialize a new node
         curr = self.head                    # Start at the head
         if curr is None:                    # If head is none, current head is val
-            self.head = Node(val)
+            self.head = node
         else:
             while curr.next is not None:    # Move to the end of the linked list
                 curr = curr.next
-            curr.next = Node(val)           # Add at the tail
+            curr.next = node                # Add at the tail
+            node.prev = curr                # Point node.prev to the current node
 
         self.size += 1                      # Increase size by 1
 
@@ -83,9 +87,10 @@ class MyLinkedList:                         # Initializes the MyLinkedList objec
         else:
             for i in range(index - 1):      # Move to one before the index-th node
                 curr = curr.next
-            node = Node(val)                # Initialize a new node with val
+            node = Node(val)                # Initialize a new node
             node.next = curr.next           # Point new node.next to curr.next
-            curr.next = node                # Point curr.next to new node
+            curr.next = node                # Point curr.next to the new node
+            node.prev = curr                # Point node.prev to the current node
 
             self.size += 1
 
@@ -93,15 +98,17 @@ class MyLinkedList:                         # Initializes the MyLinkedList objec
         """
         Delete the index-th node in the linked list, if the index is valid.
         """
-        if index >= self.size:              # If index is out of bound, nothing happens
+        if index < 0 or index >= self.size: # If index is out of bound, nothing happens
             return                          # Similar to break
 
         curr = self.head
         if index == 0:                      # 0-th index is head
             self.head = curr.next           # The new head is now curr.next
+            # self.head.prev = None           # Point head.prev to none
         else:
             for i in range(index - 1):      # Move to one before the index-th node
                 curr = curr.next
+            curr.next.prev = curr           # Point curr.next.prev to current node
             curr.next = curr.next.next      # Point curr.next to curr.next.next
 
         self.size -= 1
