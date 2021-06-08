@@ -1,14 +1,14 @@
 # Linked List
 * Similar to the array, the linked list is also a **linear** data structure.
 * Each element in the linked list is actually a separate object while all the objects are **linked together by the reference field** in each element.
-* There are two types of linked list: singly-linked list and doubly-linked list.
+* There are two types of linked list: singly linked list and doubly linked list.
 
 
 ## Singly Linked List
 <img width="530" alt="sl" src="https://user-images.githubusercontent.com/28593767/112752326-80835f80-900d-11eb-98cd-e7afedd359ca.png">
 
-* Each node in a singly-linked list contains not only the value but also *a reference field to link to the next node*. 
-    + By this way, the singly-linked list organizes all the nodes in a sequence.
+* Each node in a singly linked list contains not only the value but also *a reference field to link to the next node*. 
+    + By this way, the singly linked list organizes all the nodes in a sequence.
 * In most cases, we use **head node** (the first node) to represent the whole list.
 * To access the i-th element, we have to traverse from the head node one by one.
     + In the example above, the head is the node 23. 
@@ -341,4 +341,22 @@ To delete an existing node curr from the doubly linked list,
 
 > Since we no longer need to traverse the linked list to get the previous node, both the time and space complexity are *O(1)*.
 
+
+## Singly Linked List vs Doubly Linked List
+* Review the performance of the singly linked list and doubly linked list.
+* They are similar in many operations.
+    1. Both of them are *not able to access the data at a random position* in constant time.
+    2. Both of them are able to *add a new node after given node or at the beginning of the list in O(1) time*.
+    3. Both of them are able to *delete the first node in O(1) time*.
+* But it is a little different to *delete a given node* (including the last node).
+    + In a singly linked list, it is not able to get the previous node of a given node so we have to spend *O(N)* time to find out the previous node before deleting the given node.
+    + In a doubly linked list, it will be much easier because we can get the previous node with the "prev" reference field. So we can delete a given node in *O(1)* time.
+
+
+## Array vs Linked List
+<img width="670" alt="table" src="https://user-images.githubusercontent.com/28593767/121190687-41437b80-c8a6-11eb-88db-1bb0333d0232.png">
+
+> If you need to add or delete a node frequently, a linked list could be a good choice.
+> 
+> If you need to access an element by index often, an array might be a better choice than a linked list.
 
