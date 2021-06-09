@@ -14,7 +14,6 @@ Output: []
 Input: l1 = [], l2 = [0]
 Output: [0]
 
-
 Result: 
 """
 
