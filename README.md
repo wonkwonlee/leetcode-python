@@ -48,6 +48,7 @@ and further to prepare the coding interview.
     + [Odd Even Linked List](./Linked-List/oddEvenList.py)
     + [Palindrome Linked List](./Linked-List/isPalindrome.py)
     + [Design Linked List - **Doubly Linked List**](./Linked-List/MyLinkedList_2.py)
+    + [Merge Two Sorted Lists](./Linked-List/mergeTwoLists.py)
 
 * Binary Tree
 * Recursion I
