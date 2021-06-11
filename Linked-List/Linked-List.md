@@ -356,7 +356,6 @@ To delete an existing node curr from the doubly linked list,
 ## Array vs Linked List
 <img width="670" alt="table" src="https://user-images.githubusercontent.com/28593767/121190687-41437b80-c8a6-11eb-88db-1bb0333d0232.png">
 
-> If you need to add or delete a node frequently, a linked list could be a good choice.
-> 
-> If you need to access an element by index often, an array might be a better choice than a linked list.
+* If you need to add or delete a node frequently, a linked list could be a good choice.
+* If you need to access an element by index often, an array might be a better choice than a linked list.
 
