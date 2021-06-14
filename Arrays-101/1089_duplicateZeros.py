@@ -1,8 +1,7 @@
 """
-Duplicate Zeros
+1089. Duplicate Zeros
 Given a fixed length array arr of integers, duplicate each occurrence of 
 zero, shifting the remaining elements to the right.
-
 
 Example
 [1,0,2,3,0,4,5,0] -> [1,0,0,2,3,0,0,4]
