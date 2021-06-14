@@ -1,5 +1,5 @@
 """
-Design Linked List
+707. Design Linked List
 - Doubly Linked List
 
 # Using return

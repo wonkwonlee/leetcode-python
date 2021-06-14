@@ -23,14 +23,14 @@ and further to prepare the coding interview.
     + [Squares of a Sorted Array](./Arrays-101/sortedSquares.py)
     + [Duplicate Zeros](./Arrays-101/duplicateZeros.py)
     + [Merge Sorted Array](./Arrays-101/merge.py)
-    + [Remove Element](./Arrays-101/removeElement.py)
-    + [Remove Duplicates from Sorted Array](./Arrays-101/removeDuplicates.py)
+    + [Remove Element](./Arrays-101/0027_removeElement.py)
+    + [Remove Duplicates from Sorted Array](./Arrays-101/0026_removeDuplicates.py)
     + [Check If N and Its Double Exist](./Arrays-101/checkIfExist.py)
     + [Valid Mountain Array](./Arrays-101/validMountainArray.py)
     + [Replace Elements with Greatest Element on Right Side](./Arrays-101/replaceElements.py)
     + [Move Zeroes](./Arrays-101/moveZeroes.py)
     + [Sort Array By Parity](./Arrays-101/sortArrayByParity.py)
-    + [Remove Element **In-Place**](./Arrays-101/removeElement_2.py)
+    + [Remove Element **In-Place**](./Arrays-101/0027_removeElement_2.py)
     + [Height Checker](./Arrays-101/heightChecker.py)
     + [Max Consecutive Ones II - **Flip one 0**](./Arrays-101/findMaxConsecutiveOnes_2.py)
     + [Third Maximum Number](./Arrays-101/thirdMax.py)
@@ -38,17 +38,18 @@ and further to prepare the coding interview.
     + [Squares of a Sorted Array - **O(N) solution**](./Arrays-101/sortedSquares_2.py)
 
 * [**Linked List**](./Linked-List/Linked-List.md)
-    + [Design Linked List - **Singly Linked List**](./Linked-List/MyLinkedList.py)
+    + [Design Linked List - **Singly Linked List**](./Linked-List/0707_MyLinkedList.py)
     + [Linked List Cycle](./Linked-List/hasCycle.py)
     + [Linked List Cycle II](./Linked-List/detectCycle.py)
     + [Intersection of Two Linked Lists](./Linked-List/getIntersectionNode.py)
-    + [Remove Nth Node From End of List](./Linked-List/removeNthFromEnd.py)
+    + [Remove Nth Node From End of List](./Linked-List/0019_removeNthFromEnd.py)
     + [Reverse Linked List](./Linked-List/reverseList.py)
     + [Remove Linked List Elements](./Linked-List/removeElements.py)
     + [Odd Even Linked List](./Linked-List/oddEvenList.py)
     + [Palindrome Linked List](./Linked-List/isPalindrome.py)
-    + [Design Linked List - **Doubly Linked List**](./Linked-List/MyLinkedList_2.py)
-    + [Merge Two Sorted Lists](./Linked-List/mergeTwoLists.py)
+    + [Design Linked List - **Doubly Linked List**](./Linked-List/0707_MyLinkedList_2.py)
+    + [Merge Two Sorted Lists](./Linked-List/0021_mergeTwoLists.py)
+    + [Add Two Numbers](./Problems/0002_addTwoNumbers.py)
 
 * Binary Tree
 * Recursion I
@@ -82,9 +83,9 @@ and further to prepare the coding interview.
 |16|[3Sum Closest](./Problems/0016_threeSumClosest.py)|Medium|
 |17|[Letter Combinations of a Phone Number](./Problems/0017_letterCombinations.py)|Medium|
 |18|[4Sum](./Problems/0018_fourSum.py)|Medium|
-|19|[Remove Nth Node From End of List](./Linked-List/removeNthFromEnd.py)|Medium|
+|19|[Remove Nth Node From End of List](./Linked-List/0019_removeNthFromEnd.py)|Medium|
 |20|[Valid Parentheses](./Problems/0020_isValid.py)|Easy|
-|21|[Merge Two Sorted Lists](./Linked-List/mergeTwoLists.py)|Easy|
-|26|[Remove Duplicates from Sorted Array](./Arrays-101/removeDuplicates.py)|Easy|
-|27|[Remove Element](./Arrays-101/removeElement_2.py)|Easy|
+|21|[Merge Two Sorted Lists](./Linked-List/0021_mergeTwoLists.py)|Easy|
+|26|[Remove Duplicates from Sorted Array](./Arrays-101/0026_removeDuplicates.py)|Easy|
+|27|[Remove Element](./Arrays-101/0027_removeElement_2.py)|Easy|
 |695|[Max Area of Island](./Problems/0695_maxAreaOfIsland.py)|Medium|

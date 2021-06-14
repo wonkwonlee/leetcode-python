@@ -1,11 +1,9 @@
 """
-Remove Element
+27. Remove Element
 Given an array nums and a value val, remove all instances of that value 
 in-place and return the new length.
 
 The order of elements can be changed. 
-
-Simplified and 'Pythonic' version of removeElement.py
 
 Result: 24 ms
 """
@@ -21,5 +19,9 @@ class Solution:
         if nums.count(val) < 0:
             return 0
 
-        [nums.remove(val) for x in range(nums.count(val))]
-        return len(nums)
+        for i in range(nums.count(val)):
+            nums.remove(val)
+
+        length = len(nums)
+
+        return length
