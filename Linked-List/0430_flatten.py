@@ -24,4 +24,6 @@ Result:
 
 class Solution:
     def flatten(self, head: 'Node') -> 'Node':
-        
+        curr = head
+        while curr:
+            curr = curr.next
