@@ -50,6 +50,7 @@ and further to prepare the coding interview.
     + [Design Linked List - **Doubly Linked List**](./Linked-List/0707_MyLinkedList_2.py)
     + [Merge Two Sorted Lists](./Linked-List/0021_mergeTwoLists.py)
     + [Add Two Numbers](./Problems/0002_addTwoNumbers.py)
+    + [Flatten a Multilevel Doubly Linked List](./Linked-List/0430_flatten.py)
 
 
 * Binary Tree
