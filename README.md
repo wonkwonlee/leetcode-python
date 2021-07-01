@@ -1,4 +1,4 @@
-# LeetCode Problem
+# LeetCode Problem with Python
 
 Studying LeetCode problems with Python
 
